@@ -12,7 +12,7 @@ import { selectTeacherOptions, selectTeachersObjWithNameKeys } from '../../redux
 
 const AttendancePage = ({ currentUser, currentYear, teachers, teachersMap }) => {
     const school = currentUser.school === 'HCSS West' ? 'west' : 'east';
-    const labels = ['Attendance Summary', 'Attendance Recors', 'Leave Requests'];
+    const labels = ['Attendance Summary', 'Attendance Records', 'Leave Requests'];
     const docs = ['staffAttendance', 'staffAttendanceDetails', 'leaveRequests'];
 
     const [teacher, setTeacher] = useState(currentUser);
