@@ -78,7 +78,7 @@ const TutoringPage = ({ currentUser, currentYear, teachers, teachersMap }) => {
             tutoringTypeCounts[record[4]] = (tutoringTypeCounts[record[4]] || 0) + 1; //Column for Tutoring Type
             record.slice(1, 4).forEach(student => {
                 if (student !== '') {
-                    tutoringCounts[student] = (tutoringCounts[student] || 0) + 1;
+                    tutoringCounts[record[1]] = (tutoringCounts[record[1]] || 0) + 1;
                 }
             })
         });
